@@ -24,7 +24,7 @@ class AdvancedKundaliEngine:
         jd = swe.julday(year, month, day, decimal_hour_ut)
         return jd
 
-    def configure_settings(self, ayanamsha_mode=swe.SIDEREAL_LAHIRI, use_topocentric=True, lat=0.0, lon=0.0, alt=0.0):
+    def configure_settings(self, ayanamsha_mode=swe.SIDM_LAHIRI, use_topocentric=True, lat=0.0, lon=0.0, alt=0.0):
         swe.set_sid_mode(ayanamsha_mode)
         if use_topocentric:
             swe.set_topo(lon, lat, alt)
